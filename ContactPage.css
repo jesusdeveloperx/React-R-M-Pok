@@ -9,3 +9,10 @@
     height: 300px;
     width: 200px;
 }
+
+.head{
+    background-image: url(https://somoskudasai.com/wp-content/uploads/2020/04/portada_pokemon-peliculas.jpeg);
+    height: 300px;
+    background-size: cover;
+    background-position: top;
+}

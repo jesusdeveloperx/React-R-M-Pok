@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import './ContactPage.css'
 
@@ -7,6 +7,7 @@ export default function ContactPage() {
   const [birthdate, setBirthdate] = useState('');
   const [result, setResult] = useState(null);
   const [pokemonImage, setPokemonImage] = useState('');
+  const [showResult, setShowResult] = useState(false);
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -17,21 +18,19 @@ export default function ContactPage() {
   };
 
   const getRandomPokemon = async () => {
-    const randomPokemonId = Math.floor(Math.random() * 151) + 1; 
+    const randomPokemonId = Math.floor(Math.random() * 151) + 1;
     try {
       const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${randomPokemonId}`);
       const pokemonName = response.data.name;
       const pokemonImageUrl = response.data.sprites.front_default;
       setPokemonImage(pokemonImageUrl);
       setResult(`Enhorabuena, ${name}! Según tu fecha de nacimiento ${birthdate}, eres un Pokémon ${pokemonName}.`);
+      setShowResult(true);
     } catch (error) {
       setResult('Ha ocurrido un error al obtener tu Pokémon');
+      setShowResult(true);
     }
   };
-
-  useEffect(() => {
-    getRandomPokemon();
-  }, []); //cargar el componente
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -39,7 +38,8 @@ export default function ContactPage() {
   };
 
   return (
-    <div>
+    <div><div className='head'>
+      </div>
       <h1 className='title'>Descubre tu Pokemon</h1>
       <form className='form' onSubmit={handleSubmit}>
         <label className='' htmlFor="name">Nombre</label>
@@ -49,6 +49,7 @@ export default function ContactPage() {
           value={name}
           onChange={handleNameChange}
           required
+          style={{ color: 'black', fontSize: '16px' }}
         />
         <label className='lab' htmlFor="birthdate">Fecha de nacimiento</label>
         <input
@@ -57,12 +58,12 @@ export default function ContactPage() {
           value={birthdate}
           onChange={handleBirthdateChange}
           required
+          style={{ color: 'black', fontSize: '16px' }}
         />
-        <button type="submit">Descubrir</button>
+        <button type="submit">Descúbrelo</button>
       </form>
-      {result && <p>{result}</p>}
-      {pokemonImage && <img className='pokemon'src={pokemonImage} alt="Imagen del Pokémon" />}
+      {showResult && result && <p>{result}</p>}
+      {showResult && pokemonImage && <img className='pokemon' src={pokemonImage} alt="Imagen del pokemon" />}
     </div>
   );
 }
-
