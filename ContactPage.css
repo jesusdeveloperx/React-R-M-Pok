@@ -1,0 +1,11 @@
+.title{
+    text-transform: uppercase;
+    -webkit-text-stroke-width: thick;
+}
+.lab{
+    padding: 20px;
+}
+.pokemon{
+    height: 300px;
+    width: 200px;
+}

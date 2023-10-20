@@ -1,0 +1,39 @@
+
+.containers{
+    width: 100%;
+    flex-wrap: wrap;
+   
+}
+.box{
+       
+       width: 200px;
+       flex-wrap: wrap;
+       flex-direction: column;
+       display: inline-flex;
+       align-items: center;
+   }
+
+
+character-img{
+    display: flex;
+}
+.title{
+    height: 80px;
+display: flex;    
+padding: 15px;
+}
+.imgs{
+    width: 150px;
+}
+.name{
+    text-transform: uppercase;
+    font-family: fantasy;
+}
+
+.species{
+    font-size: initial;
+}
+.status{
+    -webkit-text-stroke-width: thick;
+    padding-bottom: 20px;
+}

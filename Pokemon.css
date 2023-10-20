@@ -1,0 +1,39 @@
+.lista{
+    width: 200px;
+    height: 200px;
+    list-style: none;
+    padding: 20px;
+
+}
+.vox{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+padding: 20px;
+align-items: center;
+}
+.search{
+    width: 200px;
+    height: 25px;
+}
+.logo{
+    width: 100px;
+    height: 50px;
+}
+.imgs{
+    width: 100px;
+    height: 150px;
+}
+.word{
+    text-transform: uppercase;
+    -webkit-text-stroke-width: thick;
+}
+.cont-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    display: flex;
+    justify-content: center;
+}

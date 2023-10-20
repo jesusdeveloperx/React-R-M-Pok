@@ -1,0 +1,16 @@
+*{
+    text-decoration: none;
+    color: aliceblue;
+}
+.nav-bar{
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+}
+.var{
+box-shadow: 1px 1px 1px 1px;
+border-radius: 50%;
+width: 150px;
+}
