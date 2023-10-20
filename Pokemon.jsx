@@ -36,6 +36,8 @@ export default function Pokemon() {
         placeholder='Encuentra tu Pokémon'
         value={searchTerm}
         onChange={handleSearch}
+        style={{ color: 'black', fontSize: '16px' }}
+
      /> <img className='logo' src='https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/73059838-a3f0-40f2-83b3-183538d7c092/d8hwdh9-ef3ca51a-576c-4d3c-a43a-c5ff20b8b8a7.png/v1/fill/w_367,h_383/fancy_pokeball_logo_thing_by_bunni89_d8hwdh9-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzgzIiwicGF0aCI6IlwvZlwvNzMwNTk4MzgtYTNmMC00MGYyLTgzYjMtMTgzNTM4ZDdjMDkyXC9kOGh3ZGg5LWVmM2NhNTFhLTU3NmMtNGQzYy1hNDNhLWM1ZmYyMGI4YjhhNy5wbmciLCJ3aWR0aCI6Ijw9MzY3In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.2NDBlEUNY8WicPMRdELVlzh-Bn1N1K55Mjsc45xp7JM' alt='log'/>
       </div>
       <ul className='vox'>
