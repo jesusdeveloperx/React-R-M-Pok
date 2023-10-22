@@ -2,12 +2,17 @@
     text-decoration: none;
     color: aliceblue;
 }
-.nav-bar{
+.nav-bar {
     width: 800px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 25px;
+    transition: transform 0.3s; /* Duración de la transición */
+}
+
+.nav-bar:hover {
+    transform: scale(1.1); /* Escala del 110% al pasar el ratón */
 }
 .var{
 box-shadow: 1px 1px 1px 1px;

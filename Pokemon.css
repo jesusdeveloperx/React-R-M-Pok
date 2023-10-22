@@ -8,6 +8,7 @@
 border-radius: 50%;
 background-size: cover;
 transition: ease-in .4s;
+animation: spin 4s linear infinite;
 
 background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/2052px-Pok%C3%A9_Ball_icon.svg.png);
 }
@@ -21,6 +22,7 @@ justify-content: center;
 flex-wrap: wrap;
 padding: 20px;
 align-items: center;
+
 }
 .search{
     width: 200px;
@@ -49,7 +51,24 @@ align-items: center;
     justify-content: center;
 }
 .logopoke{
-    width: 400px;
-    height: 200px;
-    padding: 50px;
+    width: 700px;
+    height: 400px;
+    padding: 10px;
+    
+    background-image: url(https://assets.pokemon.com//assets/cms2-es-es/img/misc/virtual-backgrounds/go/pokemon-party.jpg);
 }
+.container{
+ 
+    background-image: url(https://assets.pokemon.com//assets/cms2-es-es/img/misc/virtual-backgrounds/pokemon/detective-pikachu.jpg);
+    object-fit: cover;
+    
+    
+}
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
