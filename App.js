@@ -2,8 +2,9 @@ import {Route, Routes, BrowserRouter as Router} from "react-router-dom"
 import './App.css';
 import ContactPage from './pages/ContactPage/ContactPage';
 import Menu from "./components/Menu";
-import Pokemon from "./pages/Pokemon/Pokemon";
-import CharacterPage from "./pages/CharacterPage/CharacterPage";
+import PokemonPage from "./pages/PokemonPage/PokemonPage";
+import DigimonPage from "./pages/DigimonPage/DigimonPage";
+import RickMortPage from "./pages/RickMortPage/RickMortPage";
 
 function App() {
   return (
@@ -16,9 +17,10 @@ function App() {
        
 
         <Routes>
+        <Route path="/digimon" element={<DigimonPage/>}/>
           <Route path="/contact" element={<ContactPage/>}/>
-          <Route path="/character" element={<CharacterPage/>}/>
-          <Route path="/pokemon" element={<Pokemon/>}/>
+          <Route path="/rickmort" element={<RickMortPage/>}/>
+          <Route path="/pokemon" element={<PokemonPage/>}/>
 
 
         </Routes>

@@ -3,7 +3,7 @@
     -webkit-text-stroke-width: thick;
 }
 .lab{
-    padding: 20px;
+    padding: 10px;
 }
 .pokemon{
     height: 300px;
@@ -16,3 +16,10 @@
     background-size: cover;
     background-position: top;
 }
+
+    
+button{
+        margin: 10px;
+        background-color: black;
+
+    }

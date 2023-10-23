@@ -3,19 +3,38 @@
     color: aliceblue;
 }
 .nav-bar {
-    width: 800px;
+    height: 10%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 25px;
-    transition: transform 0.3s; /* Duración de la transición */
+    transition: transform 0.3s;
+    width: 100%;
 }
 
 .nav-bar:hover {
-    transform: scale(1.1); /* Escala del 110% al pasar el ratón */
+    transform: scale(1.1);
 }
 .var{
 box-shadow: 1px 1px 1px 1px;
 border-radius: 50%;
 width: 150px;
+background-color: black;
+}
+.log{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    padding: 10px;
+
+    
+}
+.menu-logs{
+    display: flex;
+    justify-content: flex-end;
+}
+.menu-var{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }

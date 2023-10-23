@@ -1,0 +1,86 @@
+
+
+.containers{
+    flex-wrap: wrap;
+    padding: 50px;
+    /* background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20190827/pngtree-random-energy-wave-background-image_307670.jpg); */
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100%;
+   
+}
+.box{
+       
+       width: 200px;
+       flex-wrap: wrap;
+       flex-direction: column;
+       display: inline-flex;
+       align-items: center;
+      margin: 200px;
+       border-radius: 100px;
+       border: 1px rgb(255, 255, 255) solid ;
+       background-color: rgb(46, 40, 40);
+       text-align: center;
+       margin: 10px;
+       transition-duration: 2s; /* Duración de la transición */
+}
+character-img{
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    height: 80px;
+display: flex;    
+padding: 15px;
+justify-content: center;
+}
+.imgs{
+    object-fit: cover;
+  max-width: 100%;
+  border-radius: 50%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.name{
+    text-transform: uppercase;
+    font-family: fantasy;
+}
+
+.species{
+    font-size: initial;
+}
+.status{
+    -webkit-text-stroke-width: thick;
+    padding-bottom: 20px;
+}
+
+.character-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .box {
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+    animation: spin 4s linear infinite;
+  }
+  
+  .imgs {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  

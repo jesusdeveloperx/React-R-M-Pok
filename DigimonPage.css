@@ -1,0 +1,39 @@
+*{
+    list-style: none;
+    overflow-x: hidden; 
+}
+
+.list-digi{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    
+}
+.image-digi{
+    width: 100%;
+}
+.listaDigi{
+    margin:10px;
+    background-color: rgb(255, 230, 0);
+    width: 300px;
+}
+h2{
+    text-transform: uppercase;
+
+    -webkit-text-stroke-width: thick;
+}
+.titleDigi{
+    background-image: url(https://images3.alphacoders.com/686/686177.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 300px ;
+    align-items: center;
+    padding: 10px;
+}
+.titulo{
+    height: 300px;
+    width: 450px;
+}

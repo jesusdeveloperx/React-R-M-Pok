@@ -1,0 +1,156 @@
+/* @font-face {
+    font-family: 'Press Start 2P';
+    src: url('ruta-a-tu-fuente/press-start-2p.ttf') format('truetype');
+  }
+  .elemento-con-fuente-pokemon {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 16px;}
+   */
+
+
+   .container {
+    text-align: center;
+  }
+  
+  .logopoke {
+    width: 700px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    background-image: url(https://www.egames.news/__export/1688933857168/sites/debate/img/2023/07/09/pikachu.jpg_423682103.jpg);
+    background-size: cover;
+    background-position: top;
+  }
+  
+  .cont-search {
+    display: flex;
+    justify-content: center;
+    margin: 20px ;
+  }
+  
+  .search {
+    padding: 10px;
+    border: 1px solid #000000;
+  }
+  
+  .battle-button {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .battle-button:hover {
+    background-color: #000000;
+  }
+  
+  .vox {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+ 
+  
+  .card {
+    perspective: 1000px;
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  
+  .card.flipped .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+
+   
+  }
+  
+  .card-front {
+   background-image: url(https://i.pinimg.com/736x/f7/79/c2/f779c29c5371665adafd116f66c8f6be.jpg);
+   background-position: center;
+    backface-visibility: hidden;
+    
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+
+  }
+  
+  .card-back ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 625px;
+    width: 200px;
+    -webkit-text-stroke-width: thick;
+    text-transform: uppercase;
+    transition: transform 0.2s;
+
+  }
+  .card-back ul :hover{
+    transform: scale(1.5); 
+  }
+ 
+  
+
+  .ul-back{
+    font-size: medium;
+    
+    height: 100%;
+    width: 100%;
+  }
+  .word{
+    text-transform: uppercase;
+    -webkit-text-stroke-width: thick;
+    padding-top: 20px;
+  }
+  img{
+    height: 200px;
+    width: 250px;
+   }
+   @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .luchando {
+    height: 500px;
+    width: 500px;
+    animation: rotate 2s linear infinite;
+    position: absolute; /* 2 segundos de duración y animación infinita */
+  }

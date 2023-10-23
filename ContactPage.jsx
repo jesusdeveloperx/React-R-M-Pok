@@ -27,7 +27,7 @@ export default function ContactPage() {
       setResult(`Enhorabuena, ${name}! Según tu fecha de nacimiento ${birthdate}, eres un Pokémon ${pokemonName}.`);
       setShowResult(true);
     } catch (error) {
-      setResult('Ha ocurrido un error al obtener tu Pokémon');
+      setResult('Error al obtener tu Pokémon');
       setShowResult(true);
     }
   };
@@ -38,12 +38,12 @@ export default function ContactPage() {
   };
 
   return (
-    <div><div className='head'>
+    <div className='main'><div className='head'>
       </div>
       <h1 className='title'>Descubre tu Pokemon</h1>
       <form className='form' onSubmit={handleSubmit}>
-        <label className='' htmlFor="name">Nombre</label>
-        <input
+        <label className='lab' htmlFor="name">Nombre</label>
+        <input className='input'
           type="text"
           id="name"
           value={name}
@@ -52,7 +52,7 @@ export default function ContactPage() {
           style={{ color: 'black', fontSize: '16px' }}
         />
         <label className='lab' htmlFor="birthdate">Fecha de nacimiento</label>
-        <input
+        <input className='input'
           type="date"
           id="birthdate"
           value={birthdate}

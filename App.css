@@ -17,13 +17,13 @@
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
   
-    background-image: url(https://images6.alphacoders.com/459/459669.jpg);
+    /* background-image: url(https://images6.alphacoders.com/459/459669.jpg); */
+    
 }
 
 
